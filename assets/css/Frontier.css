@@ -3459,7 +3459,7 @@ img {
 
 .author-sect .content-box .title-box {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.6)), color-stop(40%, rgba(255, 255, 255, 0.85)), to(#fff));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 25%, rgba(255, 255, 255, 0.85) 40%, #fff 100% !important)
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 25%, rgba(255, 255, 255, 0.85) 40%, #fff 100% )
 }
 
 .whitepapper-content {
@@ -3663,7 +3663,6 @@ form .f-w-600 {
     line-height: 46px;
     font-size: 24px;
     opacity: 0;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     left: 0;
     top: 0;
@@ -3788,7 +3787,6 @@ form .f-w-600 {
 
 .pricing-table .pricing-features .feature span {
     display: inline-block;
-    float: right;
     color: #3b3b3b;
     font-weight: 500
 }
@@ -4252,9 +4250,9 @@ footer .main-line-box {
 .get-a-quote .content-box {
     background-color: #4842a8;
     position: relative;
-    border-radius: 24px;
-    padding: 45px 0;
-    overflow: hidden
+    /* border-radius: 24px; */
+    padding: 30px 0;
+    overflow: hidden;
 }
 
 .get-a-quote .content-box .footer-title {
@@ -5387,7 +5385,6 @@ footer .main-line-box {
     color: #dc2e3d
 }
 
-@use 'footer';
 
 .global-sect .global-list .main-title {
     font-size: 42px

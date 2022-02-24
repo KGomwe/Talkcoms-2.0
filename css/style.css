@@ -303,16 +303,19 @@ Main Style file-> assets/css/style.css
 }
 
 .panels__side--left {
-  background: rgb(32, 65, 152);
-  /* background-image:  url("../Images/talkcoms-features-left-img.jpg"); */
-  background: url(../Images/talkcoms-features-left-img.jpg) right no-repeat;
+  background: rgb(72 90 144);
+  background-image: url("../Images/talkcoms-features-left-img.jpg");
 
 
-  /* background-color: #1548af; */
-  /* background: url(images/rh02-panel2Copy.png) center/cover; */
-  /* background-image: url("https://www.transparenttextures.com/patterns/shattered.png"); */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-size: 50vw;
+  background-position: right;
+  background-repeat: no-repeat;
 }
+
+
+
+
+
 
 .panels__side--left:hover .arrow {
   transform: translate(-100%, -50%);
@@ -320,17 +323,11 @@ Main Style file-> assets/css/style.css
 
 .panels__side--right {
 
-  background: rgb(32, 65, 152);
-  background: url("../Images/banner-home-new-one.png") left no-repeat;
-
-  /* background:  url(../Images/banner-home-new-one.png) left no-repeat; */
-
-
-
-
-  /* background-image: url("https://www.transparenttextures.com/patterns/shattered.png"); */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* background: url(images/rh02-panel2.png) center/cover; */
+  background: rgb(104 145 97);
+  background-image: url("../Images/banner-home-new-one.png");
+  background-size: 50vw;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .panels__side--right:hover .arrow {
@@ -912,8 +909,8 @@ Main Style file-> assets/css/style.css
 
 .footer-3 {
   position: relative;
-  padding-top: 130px;
-  margin-top: -130px;
+  padding-top: 35px;
+  margin-top: 0px;
   z-index: 1;
 }
 
@@ -1426,7 +1423,7 @@ hr.div-head {
     background-size: cover !important;
   }
 
-/* Background image for mobile phones */
+  /* Background image for mobile phones */
   .panels__side--right {
     background-image: url("../Images/banner-home-new-one.png");
   }
@@ -1436,7 +1433,7 @@ hr.div-head {
   }
 
   .hideinlg {
-    display: block!important;
+    display: block !important;
     font-size: larger;
   }
 }
@@ -1446,20 +1443,22 @@ hr.div-head {
   display: none;
 
 }
+
 .content-box.text-center.c-white {
-    z-index: 3;
+  z-index: 3;
 }
 
 .get-a-quote .content-box::before {
-    content: '';
-    position: absolute;
-    background-image: url(../Images/p1.svg);
-    top: 0;
-    left: 0;
-    width: 97px;
-    height: 130px;
-    z-index: 0;
+  content: '';
+  position: absolute;
+  background-image: url(../Images/p1.svg);
+  top: 0;
+  left: 0;
+  width: 97px;
+  height: 130px;
+  z-index: 0;
 }
+
 .get-a-quote .content-box::after {
   content: '';
   position: absolute;
