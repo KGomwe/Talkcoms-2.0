@@ -1416,6 +1416,7 @@ hr.div-head {
   margin-left: 10px;
 }
 
+/* Change mobile images down here */
 @media (max-width: 640px) {
 
   .panels__side--left,
@@ -1425,11 +1426,11 @@ hr.div-head {
 
   /* Background image for mobile phones */
   .panels__side--right {
-    background-image: url("../Images/banner-home-new-one.png");
+    background-image: url("../Images/Mobile/IMG-20220311-WA0013.jpg");
   }
 
   .panels__side--left {
-    background-image: url("../Images/talkcoms-features-left-img.jpg");
+    background-image: url("../Images/Mobile/IMG-20220311-WA0006.jpg");
   }
 
   .hideinlg {
