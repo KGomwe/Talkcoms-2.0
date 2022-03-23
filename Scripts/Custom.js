@@ -47,31 +47,31 @@ $(document).ready(function (e) {
     });
 });
 $(document).ready(function () {
-    var counted = 0;
-    $(document).scroll(function () {
-        var oTop = $('.states-sect,.hlis-counter').offset().top - window.innerHeight;
-        if (counted == 0 && $(window).scrollTop() > oTop) {
-            $('.counter-sts').each(function () {
-                var $this = $(this),
-                    countTo = $this.attr('data-count');
-                $({
-                    countNum: $this.text()
-                }).animate({
-                    countNum: countTo
-                }, {
-                    duration: 1100,
-                    easing: 'linear',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                    }
-                });
-            });
-            counted = 1;
-        }
-    });
+    // var counted = 0;
+    // $(document).scroll(function () {
+    //     var oTop = $('.states-sect,.hlis-counter').offset().top - window.innerHeight;
+    //     if (counted == 0 && $(window).scrollTop() > oTop) {
+    //         $('.counter-sts').each(function () {
+    //             var $this = $(this),
+    //                 countTo = $this.attr('data-count');
+    //             $({
+    //                 countNum: $this.text()
+    //             }).animate({
+    //                 countNum: countTo
+    //             }, {
+    //                 duration: 1100,
+    //                 easing: 'linear',
+    //                 step: function () {
+    //                     $this.text(Math.floor(this.countNum));
+    //                 },
+    //                 complete: function () {
+    //                     $this.text(this.countNum);
+    //                 }
+    //             });
+    //         });
+    //         counted = 1;
+    //     }
+    // });
 });
 
 (function ($, window) {
@@ -167,13 +167,7 @@ $('.filters ul li').click(function () {
         filter: data
     })
 });
-var $grid = $(".grid").isotope({
-    itemSelector: ".all",
-    percentPosition: false,
-    masonry: {
-        columnWidth: ".all"
-    }
-});
+
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
@@ -255,39 +249,39 @@ $('a.anc-link').click(function (e) {
 });
 (function ($) {
     "use strict";
-    $(document).ready(function () {
-        "use strict";
-        var progressPath = document.querySelector('.back-to-top path');
-        var pathLength = progressPath.getTotalLength();
-        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-        progressPath.style.strokeDashoffset = pathLength;
-        progressPath.getBoundingClientRect();
-        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-        var updateProgress = function () {
-            var scroll = $(window).scrollTop();
-            var height = $(document).height() - $(window).height();
-            var progress = pathLength - (scroll * pathLength / height);
-            progressPath.style.strokeDashoffset = progress;
-        }
-        updateProgress();
-        $(window).scroll(updateProgress);
-        var offset = 50;
-        var duration = 550;
-        jQuery(window).on('scroll', function () {
-            if (jQuery(this).scrollTop() > offset) {
-                jQuery('.back-to-top').addClass('active-progress');
-            } else {
-                jQuery('.back-to-top').removeClass('active-progress');
-            }
-        });
-        jQuery('.back-to-top').on('click', function (event) {
-            event.preventDefault();
-            jQuery('html, body').animate({
-                scrollTop: 0
-            }, duration);
-            return false;
-        })
-    });
-})(jQuery);
-new WOW().init();
+    // // $(document).ready(function () {
+    //     "use strict";
+    //     var progressPath = document.querySelector('.back-to-top path');
+    //     var pathLength = progressPath.getTotalLength();
+    //     progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+    //     progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+    //     progressPath.style.strokeDashoffset = pathLength;
+    //     progressPath.getBoundingClientRect();
+    //     progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    //     var updateProgress = function () {
+    //         var scroll = $(window).scrollTop();
+    //         var height = $(document).height() - $(window).height();
+    //         var progress = pathLength - (scroll * pathLength / height);
+    //         progressPath.style.strokeDashoffset = progress;
+    //     }
+    //     updateProgress();
+    //     $(window).scroll(updateProgress);
+    //     var offset = 50;
+    //     var duration = 550;
+    //     jQuery(window).on('scroll', function () {
+    //         if (jQuery(this).scrollTop() > offset) {
+    //             jQuery('.back-to-top').addClass('active-progress');
+    //         } else {
+    //             jQuery('.back-to-top').removeClass('active-progress');
+    //         }
+    //     });
+    //     jQuery('.back-to-top').on('click', function (event) {
+    //         event.preventDefault();
+    //         jQuery('html, body').animate({
+    //             scrollTop: 0
+    //         }, duration);
+    //         return false;
+         })
+    
+
+// new WOW().init();

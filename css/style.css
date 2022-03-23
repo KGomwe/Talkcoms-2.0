@@ -15,6 +15,10 @@
     margin: 0 0 0 10%;
   }
 
+  img.d-block.caroImage {
+    height: 55vh;
+  }
+
 }
 
 
@@ -304,7 +308,7 @@ Main Style file-> assets/css/style.css
 
 .panels__side--left {
   background: rgb(72 90 144);
-  background-image: url("../Images/talkcoms-features-left-img.jpg");
+  background-image: url("../assets/img/Call.jpg");
 
 
   background-size: 50vw;
@@ -324,7 +328,7 @@ Main Style file-> assets/css/style.css
 .panels__side--right {
 
   background: rgb(104 145 97);
-  background-image: url("../Images/banner-home-new-one.png");
+  background-image: url("../assets/img/App.jpg");
   background-size: 50vw;
   background-position: left;
   background-repeat: no-repeat;
@@ -1418,6 +1422,9 @@ hr.div-head {
 
 /* Change mobile images down here */
 @media (max-width: 640px) {
+  img.d-block.caroImage {
+    height: 25vh;
+  }
 
   .panels__side--left,
   .panels__side--right {
@@ -1437,6 +1444,23 @@ hr.div-head {
     display: block !important;
     font-size: larger;
   }
+
+  .mchummer {
+
+    text-align: center !important;
+  }
+}
+
+.freeBGright {
+  background: rgb(2,0,36);
+  background: linear-gradient(247deg, rgba(2, 0, 36, 0.7) 8%, rgba(9,121,35,0.7) 64%);
+
+
+}
+
+.freeBGleft {
+  background: linear-gradient(247deg,   rgba(9,121,35,0.7) 41%, rgba(0,95,255,0.7) 96%);
+
 }
 
 

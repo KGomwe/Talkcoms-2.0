@@ -30,4 +30,4 @@ var Panels = (function() {
   
   Panels.init();
   
-  var lazyLoadInstance = new LazyLoad({});
+  // var lazyLoadInstance = new LazyLoad({});

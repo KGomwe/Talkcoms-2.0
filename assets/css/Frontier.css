@@ -4248,7 +4248,7 @@ footer .main-line-box {
 }
 
 .get-a-quote .content-box {
-    background-color: #4842a8;
+    background-color: #3b9647;
     position: relative;
     /* border-radius: 24px; */
     padding: 30px 0;
@@ -4269,7 +4269,7 @@ footer .main-line-box {
 .get-a-quote .content-box::before {
     content: '';
     position: absolute;
-    background-image: url(../img/pattern-1.svg);
+    /* background-image: url(../Images/p2.svg); */
     top: 0;
     left: 0;
     width: 97px;
@@ -4280,7 +4280,7 @@ footer .main-line-box {
 .get-a-quote .content-box::after {
     content: '';
     position: absolute;
-    background-image: url(../img/pattern2.svg);
+    /* background-image: url(../Images/p2.svg); */
     bottom: 0;
     right: 0;
     width: 320px;
