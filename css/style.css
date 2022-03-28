@@ -311,7 +311,7 @@ Main Style file-> assets/css/style.css
   background-image: url("../assets/img/Call.jpg");
 
 
-  background-size: 50vw;
+  background-size: 100vh;
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -329,7 +329,7 @@ Main Style file-> assets/css/style.css
 
   background: rgb(104 145 97);
   background-image: url("../assets/img/App.jpg");
-  background-size: 50vw;
+  background-size: 100vh;
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -1228,6 +1228,8 @@ Main Style file-> assets/css/style.css
   z-index: -1;
 }
 
+
+
 .cta-funfact-wrap .cta-wrap h2 {
   font-size: 40px;
   line-height: 130%;
@@ -1422,6 +1424,43 @@ hr.div-head {
 
 /* Change mobile images down here */
 @media (max-width: 640px) {
+  .first .insides {
+    background: linear-gradient(54deg, rgba(2, 0, 36, 0.7) 3%, rgba(47, 162, 74, 0.61) 29%, rgba(7, 112, 126, 0.61) );
+  }
+
+  .second .insides {
+    background: linear-gradient(78deg, rgba(2, 0, 36, 0.7) 8%, rgb(48 169 76 / 70%) 64%);
+  }
+
+  .superarticle {
+    min-height: 393px;
+
+  }
+
+  #temp {
+    margin-top: 80px;
+  }
+
+  .superarticle.first {
+    background-image: url("../Images/Mobile/IMG-20220311-WA0013.jpg");
+  }
+
+  .superarticle.second {
+    background-image: url("../Images/Mobile/IMG-20220311-WA0006.jpg");
+  }
+
+  .insides {
+    padding: 55px 40px;
+    text-align: center;
+    height: 105%;
+  }
+
+  .insides p {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 40px;
+  }
+
   img.d-block.caroImage {
     height: 25vh;
   }
@@ -1452,14 +1491,14 @@ hr.div-head {
 }
 
 .freeBGright {
-  background: rgb(2,0,36);
-  background: linear-gradient(247deg, rgba(2, 0, 36, 0.7) 8%, rgba(9,121,35,0.7) 64%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(247deg, rgba(2, 0, 36, 0.7) 8%, rgba(9, 121, 35, 0.7) 64%);
 
 
 }
 
 .freeBGleft {
-  background: linear-gradient(247deg,   rgba(9,121,35,0.7) 41%, rgba(0,95,255,0.7) 96%);
+  background: linear-gradient(247deg, rgba(9, 121, 35, 0.7) 41%, rgba(0, 95, 255, 0.7) 96%);
 
 }
 
@@ -1493,4 +1532,9 @@ hr.div-head {
   width: 320px;
   height: 260px;
   z-index: 0;
+}
+
+
+.carousel-caption {
+  z-index: 8;
 }
